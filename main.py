@@ -42,17 +42,17 @@ while True:
             if computer_choice =='S':
                 print('Rock smashes scissors , you win!')
             elif computer_choice == "P":
-                print('Paper cover rock, computer win!')
+                print('Paper cover rock, computer wins!')
         elif user_choice == 'S':
             if computer_choice == 'P':
                 print('Scissors cuts paper , you win!')
             elif computer_choice == "R":
-                print('Rock smashes scissors, computer win!')
+                print('Rock smashes scissors, computer wins!')
         elif user_choice == 'P':
             if computer_choice == 'R':
                 print('Paper covers rock, you win!')
             elif computer_choice == "S":
-                print('Scissors cuts paper, computer win!')
+                print('Scissors cuts paper, computer wins!')
         if user_choice == computer_choice:
             print('This is a tie,play again!')
         else:
