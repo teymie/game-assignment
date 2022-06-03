@@ -23,6 +23,7 @@ while True:
             name_choices ='Scissors'
         elif user_choice == "P":
             name_choices ='Paper'
+            
         
         computer_choice = random.choice(possible_choices)
         computer_choices = ""
@@ -34,25 +35,26 @@ while True:
         elif computer_choice == "P":
             computer_choices="Paper"
         
-        print("Player","(",name_choices,")" , ":  CPU","(",computer_choices,")" )
+        
+        print(f"player ({name_choices}) : CPU ({computer_choices})")
 
         if user_choice == "R":
             if computer_choice =='S':
                 print('Rock smashes scissors , you win!')
             elif computer_choice == "P":
-                print('Paper cover rock, You lose!')
+                print('Paper cover rock, computer win!')
         elif user_choice == 'S':
             if computer_choice == 'P':
                 print('Scissors cuts paper , you win!')
             elif computer_choice == "R":
-                print('Rock smashes scissors, you lose!')
+                print('Rock smashes scissors, computer win!')
         elif user_choice == 'P':
             if computer_choice == 'R':
                 print('Paper covers rock, you win!')
             elif computer_choice == "S":
-                print('Scissors cuts paper, you lose!')
+                print('Scissors cuts paper, computer win!')
         if user_choice == computer_choice:
-            print('This is a tie, you lose!')
+            print('This is a tie,play again!')
         else:
             print('Thanks for playing!')
             break
